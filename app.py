@@ -7,7 +7,7 @@ from sklearn.cluster import KMeans
 import streamlit as st
 
 #loadthe saved model
-kmeans = joblib.load('model.pkl')
+kmeans = joblib.load('Model.pkl')
 df = pd.read_csv('Mall_Customers.csv')
 X = df[['Age', 'Annual Income (k$)', 'Spending Score (1-100)']]
 X_array = X.values
